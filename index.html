@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon site vitrine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- En-tête : logo + menu, présent sur toutes les pages -->
+    <header>
+      <h1>Théo Dev</h1>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu principal : une seule balise main par page -->
+    <main>
+      <!-- Section = regroupement thématique -->
+      <section id="acceuil">
+        <h2>Bienvenue</h2>
+        <p>Je suis en reconversion vers le développement web.</p>
+      </section>
+
+      <section id="apropos">
+        <h2>À propos de moi</h2>
+        <div class="apropos_de_moi">
+          <article>
+            <h3>Mon parcours</h3>
+            <p>
+              Actuellement ASCT à la SNCF, en apprentissage autodidacte du
+              développement.
+            </p>
+          </article>
+
+          <aside id="github">
+            <h3>Github</h3>
+            <p>
+              <a href="https://github.com/theobslm/dev-fullstack-2027.git"
+                >Mon profil Github</a
+              >
+            </p>
+          </aside>
+        </div>
+      </section>
+      <section id="competences">
+        <h2>Compétences</h2>
+        <ul id="liste_competences">
+          <li class="badge">HTML</li>
+          <li class="badge">CSS</li>
+          <li class="badge">JavaScript</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form
+          action="mailto:theo.bensalem@outlook.fr"
+          method="post"
+          enctype="text/plain"
+          class="contact-form"
+        >
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" />
+          <label for="message">Message :</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <p>&copy; 2026 Théo — Tous droits réservés</p>
+    </footer>
+  </body>
+</html>
