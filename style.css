@@ -25,8 +25,13 @@ header nav a {
 }
 .apropos_de_moi {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 24px;
+}
+@media (min-width: 768px) {
+  .apropos_de_moi {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 #acceuil {
@@ -45,9 +50,18 @@ header nav a {
 #liste_competences {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
   gap: 24px;
   list-style: none;
 }
+
+@media (max-width: 768px) {
+  #liste_competences {
+    flex-direction: row;
+  }
+}
+
 .badge {
   background-color: #1a1a2e;
   color: white;
