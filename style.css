@@ -34,7 +34,7 @@ header nav a {
   }
 }
 
-#acceuil {
+#accueil {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +56,7 @@ header nav a {
   list-style: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   #liste_competences {
     flex-direction: row;
   }
